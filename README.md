@@ -1,13 +1,15 @@
-About r-bundle
-==============
-
-Home: https://github.com/rstudio/bundle, https://rstudio.github.io/bundle/
-
-Package license: MIT
+About r-bundle-feedstock
+========================
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-bundle-feedstock/blob/main/LICENSE.txt)
 
+Home: https://rstudio.github.io/bundle/
+
+Package license: MIT
+
 Summary: Typically, models in 'R' exist in memory and can be saved via regular 'R' serialization. However, some models store information in locations that cannot be saved using 'R' serialization alone. The goal of 'bundle' is to provide a common interface to capture this information, situate it within a portable object, and restore it for use in new settings.
+
+Development: https://github.com/rstudio/bundle
 
 Current build status
 ====================
@@ -144,5 +146,4 @@ Feedstock Maintainers
 =====================
 
 * [@conda-forge/r](https://github.com/conda-forge/r/)
-* [@mfansler](https://github.com/mfansler/)
 
