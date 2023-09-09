@@ -1,4 +1,4 @@
-{% set version = '0.1.0' %}
+{% set version = "0.1.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/bundle_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/bundle/bundle_{{ version }}.tar.gz
-  sha256: 0fd9db25686493e0b954659fd16e5244fee81af5f29df92f87a3b2565769398a
+  sha256: 5fea189ce80c8a0b4bc9424ad9835cfa4774202f37797dc8a2cb990b270974ac
 
 build:
-  merge_build_host: True  # [win]
-  number: 2
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -61,11 +61,8 @@ about:
   home: https://rstudio.github.io/bundle/
   dev_url: https://github.com/rstudio/bundle
   license: MIT
-  summary: Typically, models in 'R' exist in memory and can be saved via regular 'R' serialization.
-    However, some models store information in locations that cannot be saved using 'R'
-    serialization alone. The goal of 'bundle' is to provide a common interface to capture
-    this information, situate it within a portable object, and restore it for use in
-    new settings.
+  summary: Typically, models in 'R' exist in memory and can be saved via regular 'R' serialization. However, some models store information in locations that cannot be saved using 'R' serialization alone. The goal of 'bundle' is to provide a common interface to capture this information, situate it within a portable object,
+    and restore it for use in new settings.
   license_family: MIT
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
