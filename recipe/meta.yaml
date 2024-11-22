@@ -47,7 +47,7 @@ test:
     - r-recipes
     - r-stacks
     - r-workflows
-    - r-xgboost
+    - r-xgboost <2.1
   source_files:
     - tests/testthat/
     - tests/testthat.R
